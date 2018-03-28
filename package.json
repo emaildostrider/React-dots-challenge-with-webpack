@@ -1,0 +1,36 @@
+{
+  "name": "dots",
+  "version": "1.0.0",
+  "description": "Celebryts challenge",
+  "main": "index.js",
+  "scripts": {
+    "start": "npm run build",
+    "build": "webpack --mode=development && cp src/index.html dist/index.html && webpack-dev-server --content-base src/ --inline",
+    "build:prod": "webpack --mode=production && cp src/index.html dist/index.html"
+  },
+  "keywords": [
+    "dots",
+    "challenge"
+  ],
+  "author": "Jefferson Reis",
+  "license": "ISC",
+  "dependencies": {
+    "classnames": "^2.2.5",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.7",
+    "redux": "^3.7.2",
+    "shortid": "^2.2.8"
+  },
+  "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "css-loader": "^0.28.11",
+    "style-loader": "^0.20.3",
+    "webpack": "^4.3.0",
+    "webpack-cli": "^2.0.13",
+    "webpack-dev-server": "^3.1.1"
+  }
+}
